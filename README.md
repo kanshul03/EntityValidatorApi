@@ -1,5 +1,4 @@
-# Entity_Validator_API
-
+# EntityValidator
 * This project includes a Django App which has 2 REST APIs.
 * POST API for validation of an entity if it belongs in a finite set.
 * POST API for validation of an entity based on numeric constraints.
@@ -165,7 +164,7 @@ The following are the requirements for the project, which will be installed in t
 * marshmallow
 
 Note - Marshmallow is used in this project to validate the incoming data and then convert it into python class object.
-Here, the validation means is to check if the required fields are given or not in the request.
+Here, the validation means is to check if the required keys are present in the json and if they are matching with the required data types in the request.
 
 ---
 
@@ -180,7 +179,7 @@ To build the docker image from docker file -
     * docker build --tag <image_name>:<image_version> .
     * Eg - docker build --tag entity_validator:v1 .
   
-Docker image can also be directly pulled using the following command - 
+Docker image can also be directly pulled from my docker hub using the following command - 
  * docker pull kanshul03/entity_validator:v1
   
 Once the docker image is built, run the following command to run the image -
@@ -201,4 +200,16 @@ OR
 * To see Swagger-docs, open -
     * [http://localhost:8080/swagger-docs/](http://localhost:8080/swagger-docs/)
  
+---
  
+### Logger -
+Basic Logs are stored in debug.log
+
+---
+
+## FUTURE FEATURES
+* Improve Logging through key-based logging per each request to observe each
+workflow.
+* Improve swagger through custom schema.
+
+

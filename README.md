@@ -199,6 +199,9 @@ OR
     
 * To see Swagger-docs, open -
     * [http://localhost:8080/swagger-docs/](http://localhost:8080/swagger-docs/)
+    
+    OR
+    * You can also open the swagger.yml file in [editor.swagger.io](https://editor.swagger.io/)
  
 ---
  

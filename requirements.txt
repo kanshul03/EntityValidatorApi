@@ -1,0 +1,4 @@
+django
+marshmallow
+djangorestframework
+django-rest-swagger

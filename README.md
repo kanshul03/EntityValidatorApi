@@ -187,7 +187,7 @@ Once the docker image is built, run the following command to run the image -
 * Eg - docker run -p 8080:8080 -t entity_validator:v1
 
 OR
- * docker run -p 8080:8080 -t kanshul03/entity_validator:v1
+ * docker run -p 8080:8080 -t kanshul03/entity_validator
 ---
 
 ## Running Django App - 
